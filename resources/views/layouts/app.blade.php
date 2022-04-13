@@ -78,21 +78,27 @@
         </nav>
 
         <main class="py-4">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item"><a href="">Post</a></li>
-                        <li class="list-group-item"><a href="">Categories</a></li>
-                        <li class="list-group-item"><a href="">Post</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-8">
-                    @yield('content')
-                </div>
-            </div>
-            </div>
+            @auth
+               <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="">Post</a></li>
+                                <li class="list-group-item"><a href="">Categories</a></li>
+                                <li class="list-group-item"><a href="">Post</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8">
+                            @yield('content')
+                        </div>
+                    </div>
+                </div> 
+            @else
+                @yield('content')
+            @endauth
         </main>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
