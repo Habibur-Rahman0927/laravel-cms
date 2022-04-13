@@ -26,3 +26,5 @@ Auth::routes();
 
 Route::resource('categories', 'App\Http\Controllers\CategoriesController');
 
+Route::resource('posts', 'App\Http\Controllers\PostsController');
+
