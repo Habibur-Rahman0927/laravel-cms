@@ -16,7 +16,7 @@ class PostsController extends Controller
     public function index()
     {
         //
-        return view('posts.index');
+        return view('posts.index')->with('posts', Post::all());
     }
 
     /**
@@ -91,6 +91,19 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::withTrashed()->whereId($id)->firstOrFail();
+        if ($post->trashed()){
+            $post->forceDelete();
+        }else{
+            $post->delete();
+        }
+        session()->flash('success', 'Post Delete successfully');
+        return redirect(route('posts.index'));
+    }
+
+    public function trashed(){
+        $trashed = Post::withTrashed()->get();
+
+        return view('posts.index')->with('posts',$trashed);
     }
 }
