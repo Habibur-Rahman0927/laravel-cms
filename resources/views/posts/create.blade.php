@@ -7,15 +7,7 @@
         </div>
 
         <div class="card-body">
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul class="list-group">
-                        @foreach ($errors->all() as $error)
-                            {{$error}}
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+            @include('partials.errors')
             <form action="{{ isset($post) ? route('posts.update', $post->id) : route('posts.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @if (isset($post))
