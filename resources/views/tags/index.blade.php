@@ -24,8 +24,7 @@
                                 {{$tag->name}}
                             </td>
                             <td>
-                                0
-                                {{-- {{$tag->posts->count()}} --}}
+                                {{$tag->posts->count()}}
                             </td>
                             <td>
                                 <a href="{{route('tags.edit', $tag->id)}}" class="btn btn-info float-end">Edit</a>
