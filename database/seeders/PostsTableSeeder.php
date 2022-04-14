@@ -5,7 +5,9 @@ namespace Database\Seeders;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Tag;
+use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class PostsTableSeeder extends Seeder
 {
@@ -26,16 +28,29 @@ class PostsTableSeeder extends Seeder
             'name' => 'PartnerShip',
         ]);
 
+        $author1 = User::create([
+            'name' => 'John Doe',
+            'email' => 'john@doe.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        $author2 = User::create([
+            'name' => 'Jana Doe',
+            'email' => 'jana@doe.com',
+            'password' => Hash::make('password'),
+        ]);
+
 
         $post1 = Post::create([
             'title'=> 'We relocated our office to a new designed garage',
             'description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", 
             'content' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
             'category_id' => $category1->id,
-            'image' => 'image'
+            'image' => 'image',
+            'user_id' => $author1->id,
         ]);
 
-        $post2 = Post::create([
+        $post2 = $author2->posts()->create([
             'title' => 'Best practices for minimalist design with example',
             'description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
             'content' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -43,7 +58,7 @@ class PostsTableSeeder extends Seeder
             'image' => 'image'
         ]);
 
-        $post3 = Post::create([
+        $post3 = $author1->posts()->create([
             'title' => 'Top 5 brilliant content marketing strategies',
             'description' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
             'content' => "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
