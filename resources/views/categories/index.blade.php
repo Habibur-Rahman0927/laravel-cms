@@ -10,6 +10,7 @@
             Categories
         </div>
         <div class="card-body">
+            @if ($categories->count() > 0)
             <table class="table">
                 <thead>
                     <th>Name</th>
@@ -32,7 +33,7 @@
                 </tbody>
             </table>
                 <!-- Modal -->
-                <form action="{{ route('categories.destroy', $category->id) }}" method="POST">
+                    <form action="{{ route('categories.destroy', $category->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -55,6 +56,9 @@
                 </div>
                 </div>
                 </form>
+                @else 
+                <h3 class="text-center">No Categories Yet</h3>
+                @endif
         </div>
     </div>
 @endsection
