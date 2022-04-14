@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Increase your newsletter members by including a subscription block in your pages.">
+    <meta name="keywords" content="subscribe, newsletter, mailchimp, sample, block">
 
-    <title>TheSaaS — Blog with sidebar</title>
+    <title>TheSaaS — Subscribe blocks</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
-    <link rel="icon" href="{{asset('img/favicon.png')}}">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
   </head>
 
-  <body>
+  <body class="demo-section">
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
       <div class="container">
 
         <div class="navbar-left">
@@ -168,12 +168,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="#">Blog <span class="arrow"></span></a>
+              <a class="nav-link" href="#">Blog <span class="arrow"></span></a>
               <nav class="nav">
                 <a class="nav-link" href="../blog/classic.html">Classic</a>
                 <a class="nav-link" href="../blog/grid.html">Grid</a>
                 <a class="nav-link" href="../blog/list.html">List</a>
-                <a class="nav-link active" href="../blog/sidebar.html">Sidebar</a>
+                <a class="nav-link" href="../blog/sidebar.html">Sidebar</a>
                 <div class="nav-divider"></div>
                 <a class="nav-link" href="../blog/post-1.html">Post 1</a>
                 <a class="nav-link" href="../blog/post-2.html">Post 2</a>
@@ -191,7 +191,7 @@
             </li>
 
             <li class="nav-item nav-mega">
-              <a class="nav-link" href="#">Blocks <span class="arrow"></span></a>
+              <a class="nav-link active" href="#">Blocks <span class="arrow"></span></a>
               <nav class="nav px-lg-2 py-lg-4">
                 <div class="container-fluid">
                   <div class="row">
@@ -234,7 +234,7 @@
                         <a class="nav-link" href="../block/service.html">Service</a>
                         <a class="nav-link" href="../block/shop.html">Shop</a>
                         <a class="nav-link" href="../block/signup.html">Signup</a>
-                        <a class="nav-link" href="../block/subscribe.html">Subscribe</a>
+                        <a class="nav-link active" href="../block/subscribe.html">Subscribe</a>
                         <a class="nav-link" href="../block/team.html">Team</a>
                         <a class="nav-link" href="../block/testimonial.html">Testimonial</a>
                         <a class="nav-link" href="../block/video.html">Video</a>
@@ -327,186 +327,258 @@
 
 
     <!-- Header -->
-    <header class="header text-center text-white" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
+    <header class="header pb-9 pt-10 mb-9" style="background-image: url(../assets/img/bg/4.jpg)">
       <div class="container">
-
         <div class="row">
-          <div class="col-md-8 mx-auto">
+          <div class="col-md-6">
+            <h1 class="fw-200 mb-6">Subscribe Blocks</h1>
+            <p class="lead-2">Increase your newsletter members by including a subscription block in your pages.</p>
 
-            <h1>Latest Blog Posts</h1>
-            <p class="lead-2 opacity-90 mt-6">Read and get updated on how we progress</p>
+            <hr class="w-50px ml-0">
 
+            <a class="text-muted" href="index.html">Explore all the available blocks</a>
           </div>
         </div>
-
       </div>
     </header><!-- /.header -->
 
 
     <!-- Main Content -->
     <main class="main-content">
-      <div class="section bg-gray">
-        <div class="container">
-          <div class="row">
 
 
-            <div class="col-md-8 col-xl-9">
-              <div class="row gap-y">
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 1
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/1.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">News</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">We relocated our office to a new designed garage</a></h5>
-                    </div>
+      <h6 id="block-1" class="block-number"><a href="#block-1">Block 1</a></h6>
+
+      <section class="section text-white bg-img-bottom" style="background-image: url(../assets/img/bg/2.jpg)" data-overlay="7">
+        <div class="container text-center">
+
+          <h2>News and Updates</h2>
+          <br>
+          <p class="lead">Subscribe to our newsletter and receive the latest news from TheThemeio.</p>
+
+          <br><br>
+
+          <form class="input-glass" action="" method="post" target="_blank">
+            <div class="form-row">
+              <div class="col-md-4 ml-auto mb-4 mb-md-0">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                   </div>
+                  <input type="email" name="EMAIL" class="form-control" placeholder="Email Address">
                 </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/2.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Marketing</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Top 5 brilliant content marketing strategies</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/3.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Design</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Best practices for minimalist design with example</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/4.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Hiring</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Congratulate and thank to Maryam for joining our team</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/5.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Product</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">New published books to read by a product designer</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/6.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Management</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">This is why it's time to ditch dress codes at work</a></h5>
-                    </div>
-                  </div>
-                </div>
-
               </div>
 
+              <div class="col-md-2 mr-auto">
+                <button class="btn btn-block btn-lg btn-primary">Subscribe</button>
+              </div>
+            </div>
+          </form>
 
-              <nav class="flexbox mt-30">
-                <a class="btn btn-white disabled"><i class="ti-arrow-left fs-9 mr-4"></i> Newer</a>
-                <a class="btn btn-white" href="#">Older <i class="ti-arrow-right fs-9 ml-4"></i></a>
-              </nav>
+          <br><br><br>
+
+          <div class="social social-light social-bg-dark text-center">
+            <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="social-gplus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 2
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-2" class="block-number"><a href="#block-2">Block 2</a></h6>
+
+      <section class="section text-white overflow-hidden" style="background-image: linear-gradient(120deg, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-md-6">
+              <h2>Stay Updated</h2>
+              <p class="lead">Subscribe to our newsletter to be always aware of our new updates.<br>We build the most powerful and flexible templates for startups.</p>
+              <br>
+              <div class="row">
+                <form class="col-md-9 input-glass" action="" method="post" target="_blank">
+                  <div class="input-group">
+                    <input type="text" name="EMAIL" class="form-control" placeholder="Enter Email Address">
+                    <span class="input-group-append">
+                      <button class="btn btn-glass btn-light" type="button">Sign up <i class="ti-arrow-right fs-9 ml-3"></i></button>
+                    </span>
+                  </div>
+                </form>
+              </div>
             </div>
 
 
-
-            <div class="col-md-4 col-xl-3">
-              <div class="sidebar px-4 py-md-0">
-
-                <h6 class="sidebar-title">Search</h6>
-                <form class="input-group" target="#" method="GET">
-                  <input type="text" class="form-control" name="s" placeholder="Search">
-                  <div class="input-group-addon">
-                    <span class="input-group-text"><i class="ti-search"></i></span>
-                  </div>
-                </form>
-
-                <hr>
-
-                <h6 class="sidebar-title">Categories</h6>
-                <div class="row link-color-default fs-14 lh-24">
-                  <div class="col-6"><a href="#">News</a></div>
-                  <div class="col-6"><a href="#">Updates</a></div>
-                  <div class="col-6"><a href="#">Design</a></div>
-                  <div class="col-6"><a href="#">Marketing</a></div>
-                  <div class="col-6"><a href="#">Partnership</a></div>
-                  <div class="col-6"><a href="#">Product</a></div>
-                  <div class="col-6"><a href="#">Hiring</a></div>
-                  <div class="col-6"><a href="#">Offers</a></div>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">Top posts</h6>
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/4.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Thank to Maryam for joining our team</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/3.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Best practices for minimalist design</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/5.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">New published books for product designers</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/2.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Top 5 brilliant content marketing strategies</p>
-                </a>
-
-                <hr>
-
-                <h6 class="sidebar-title">Tags</h6>
-                <div class="gap-multiline-items-1">
-                  <a class="badge badge-secondary" href="#">Record</a>
-                  <a class="badge badge-secondary" href="#">Progress</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Freebie</a>
-                  <a class="badge badge-secondary" href="#">Offer</a>
-                  <a class="badge badge-secondary" href="#">Screenshot</a>
-                  <a class="badge badge-secondary" href="#">Milestone</a>
-                  <a class="badge badge-secondary" href="#">Version</a>
-                  <a class="badge badge-secondary" href="#">Design</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Job</a>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">About</h6>
-                <p class="small-3">TheSaaS is a responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4. TheSaaS is a powerful and super flexible tool for any kind of landing pages.</p>
-
-
-              </div>
+            <div class="col-md-4 ml-auto text-center mt-8 mt-md-0">
+              <img src="../assets/img/preview/phone-2.png" alt="..." data-aos="slide-up">
             </div>
 
           </div>
+
         </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 3
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-3" class="block-number"><a href="#block-3">Block 3</a></h6>
+
+      <section class="section text-white py-10" style="background-image: url(../assets/img/bg/11.jpg)" data-overlay="6">
+        <div class="container text-center">
+
+          <h2>Stay Tuned</h2>
+          <br>
+          <p class="lead">Subscribe to our newsletter and receive the latest news from TheThemeio.</p>
+
+          <div class="row mt-8">
+            <form class="col-md-8 col-xl-6 input-glass input-round mx-auto" action="" method="post" target="_blank">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                </div>
+                <input type="text" name="EMAIL" class="form-control" placeholder="Email Address">
+                <span class="input-group-append">
+                  <button class="btn btn-light">Subscribe</button>
+                </span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 4
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-4" class="block-number"><a href="#block-4">Block 4</a></h6>
+
+      <section class="section py-7">
+        <div class="container">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-6">
+              <p class="lead mb-0 text-center text-md-left">Subscribe to our newsletter and receive the latest news.</p>
+            </div>
+
+            <div class="col-md-4 ml-auto">
+              <form class="input-round justify-content-center justify-content-lg-end" action="" method="post" target="_blank">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                  </div>
+                  <input type="text" name="EMAIL" class="form-control" placeholder="Email Address">
+                  <span class="input-group-append">
+                    <button class="btn btn-info">Subscribe</button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 5
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-5" class="block-number"><a href="#block-5">Block 5</a></h6>
+
+      <section class="section py-10" style="background-image: url(../assets/img/bg/1.jpg)" data-overlay="3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-xl-6 mx-auto">
+
+              <div class="section-dialog bg-primary text-white">
+                <h4>Latest news direct to your inbox</h4>
+                <br><br>
+                <p class="text-right small pr-5">Subscribe Now</p>
+                <form class="input-glass input-round" action="" method="post" target="_blank">
+                  <div class="input-group">
+                    <input type="text" name="EMAIL" class="form-control" placeholder="Enter Email Address">
+                    <span class="input-group-append">
+                      <button class="btn btn-glass btn-light" type="button">Sign up <i class="ti-arrow-right fs-9 ml-2"></i></button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 6
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-6" class="block-number"><a href="#block-6">Block 6</a></h6>
+
+      <section class="section text-white" style="background-color: #56a9ef;">
+        <div class="container text-center">
+
+          <p class="small-4 text-uppercase ls-2 fw-600 opacity-70">Stay up-to-date</p>
+          <h2>Ready to get started?</h2>
+
+          <div class="row mt-7">
+            <form class="col-md-8 col-xl-5 input-glass mx-auto" action="" method="post" target="_blank">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                </div>
+                <input type="text" name="EMAIL" class="form-control" placeholder="Enter Your Email">
+                <span class="input-group-append">
+                  <button class="btn btn-light">Subscribe</button>
+                </span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <div class="container" id="mailchimp-integration">
+        <div class="alert alert-primary">
+          <p><strong>MailChimp integration</strong></p>
+          <p>All of the subscribe forms are almost ready to collect emails for your MailChimp account. You should only obtain your MailChimp form action url and place it inside the action attribute of your subscribe form.</p>
+          <p>To learn how you can obtain your MailChimp form action url, please <a class="alert-link" href="https://www.youtube.com/watch?v=sybmI8HgxFo" data-provide="lightbox">watch this video</a>.</p>
+        </div>
+
+        <br><br>
       </div>
-    </main>
+
+
+    </main><!-- /.main-content -->
 
 
     <!-- Footer -->
@@ -543,8 +615,8 @@
 
 
     <!-- Scripts -->
-    <script src="{{ asset('js/page.min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 
   </body>
 </html>

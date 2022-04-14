@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Few components and script to help you with scrolling to a point or display a content on scroll.">
+    <meta name="keywords" content="scroll, scroll top, scrollto, smooth scroll, animation, aos, plugin, animate on scroll">
 
-    <title>TheSaaS — Blog with sidebar</title>
+    <title>TheSaaS — Scroll</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
-    <link rel="icon" href="{{asset('img/favicon.png')}}">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
   </head>
 
   <body>
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
       <div class="container">
 
         <div class="navbar-left">
@@ -168,12 +168,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="#">Blog <span class="arrow"></span></a>
+              <a class="nav-link" href="#">Blog <span class="arrow"></span></a>
               <nav class="nav">
                 <a class="nav-link" href="../blog/classic.html">Classic</a>
                 <a class="nav-link" href="../blog/grid.html">Grid</a>
                 <a class="nav-link" href="../blog/list.html">List</a>
-                <a class="nav-link active" href="../blog/sidebar.html">Sidebar</a>
+                <a class="nav-link" href="../blog/sidebar.html">Sidebar</a>
                 <div class="nav-divider"></div>
                 <a class="nav-link" href="../blog/post-1.html">Post 1</a>
                 <a class="nav-link" href="../blog/post-2.html">Post 2</a>
@@ -247,7 +247,7 @@
             </li>
 
             <li class="nav-item nav-mega">
-              <a class="nav-link" href="#">UI Kit <span class="arrow"></span></a>
+              <a class="nav-link active" href="#">UI Kit <span class="arrow"></span></a>
               <nav class="nav px-lg-2 py-lg-4">
                 <div class="container-fluid">
                   <div class="row">
@@ -292,7 +292,7 @@
                         <a class="nav-link" href="../uikit/pricing.html">Pricing</a>
                         <a class="nav-link" href="../uikit/process.html">Process</a>
                         <a class="nav-link" href="../uikit/progress.html">Progress</a>
-                        <a class="nav-link" href="../uikit/scroll.html">Scroll</a>
+                        <a class="nav-link active" href="../uikit/scroll.html">Scroll</a>
                         <a class="nav-link" href="../uikit/section.html">Section</a>
                       </nav>
                     </div>
@@ -327,186 +327,205 @@
 
 
     <!-- Header -->
-    <header class="header text-center text-white" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
+    <header class="header pb-9 pt-10" style="background-image: url(../assets/img/bg/4.jpg)">
       <div class="container">
-
         <div class="row">
-          <div class="col-md-8 mx-auto">
+          <div class="col-md-6">
+            <h1 class="fw-200 mb-6">Scroll</h1>
+            <p class="lead-2">Few components and script to help you with scrolling to a point or display a content on scroll.</p>
 
-            <h1>Latest Blog Posts</h1>
-            <p class="lead-2 opacity-90 mt-6">Read and get updated on how we progress</p>
+            <hr class="w-50px ml-0">
 
+            <a class="text-dark opacity-50 small" href="index.html">Also, visit our documentation page.</a>
           </div>
         </div>
-
       </div>
     </header><!-- /.header -->
 
 
     <!-- Main Content -->
     <main class="main-content">
-      <div class="section bg-gray">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Flash down
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section" id="section-flash-down">
         <div class="container">
-          <div class="row">
+          <header class="section-header">
+            <small>Scroll</small>
+            <h2>Flash Down</h2>
+            <hr>
+            <p class="lead">Animated flash / scroll down hints in both light and dark colors.</p>
+          </header>
 
 
-            <div class="col-md-8 col-xl-9">
-              <div class="row gap-y">
+          <div class="row text-center">
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/1.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">News</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">We relocated our office to a new designed garage</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/2.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Marketing</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Top 5 brilliant content marketing strategies</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/3.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Design</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Best practices for minimalist design with example</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/4.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Hiring</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Congratulate and thank to Maryam for joining our team</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/5.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Product</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">New published books to read by a product designer</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/6.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Management</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">This is why it's time to ditch dress codes at work</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <nav class="flexbox mt-30">
-                <a class="btn btn-white disabled"><i class="ti-arrow-left fs-9 mr-4"></i> Newer</a>
-                <a class="btn btn-white" href="#">Older <i class="ti-arrow-right fs-9 ml-4"></i></a>
-              </nav>
+            <div class="col">
+              <a class="scroll-down-1" href="#scroll-top"><span></span></a>
             </div>
 
+            <div class="col">
+              <a class="scroll-down-2" href="#scroll-top"><span></span></a>
+            </div>
 
+            <div class="col">
+              <a class="scroll-down-3" href="#scroll-top">
+                <span></span><span></span><span></span>
+              </a>
+            </div>
 
-            <div class="col-md-4 col-xl-3">
-              <div class="sidebar px-4 py-md-0">
+            <div class="col">
+              <a class="scroll-down-4" href="#scroll-top"><span></span></a>
+            </div>
 
-                <h6 class="sidebar-title">Search</h6>
-                <form class="input-group" target="#" method="GET">
-                  <input type="text" class="form-control" name="s" placeholder="Search">
-                  <div class="input-group-addon">
-                    <span class="input-group-text"><i class="ti-search"></i></span>
-                  </div>
-                </form>
-
-                <hr>
-
-                <h6 class="sidebar-title">Categories</h6>
-                <div class="row link-color-default fs-14 lh-24">
-                  <div class="col-6"><a href="#">News</a></div>
-                  <div class="col-6"><a href="#">Updates</a></div>
-                  <div class="col-6"><a href="#">Design</a></div>
-                  <div class="col-6"><a href="#">Marketing</a></div>
-                  <div class="col-6"><a href="#">Partnership</a></div>
-                  <div class="col-6"><a href="#">Product</a></div>
-                  <div class="col-6"><a href="#">Hiring</a></div>
-                  <div class="col-6"><a href="#">Offers</a></div>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">Top posts</h6>
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/4.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Thank to Maryam for joining our team</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/3.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Best practices for minimalist design</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/5.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">New published books for product designers</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/2.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Top 5 brilliant content marketing strategies</p>
-                </a>
-
-                <hr>
-
-                <h6 class="sidebar-title">Tags</h6>
-                <div class="gap-multiline-items-1">
-                  <a class="badge badge-secondary" href="#">Record</a>
-                  <a class="badge badge-secondary" href="#">Progress</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Freebie</a>
-                  <a class="badge badge-secondary" href="#">Offer</a>
-                  <a class="badge badge-secondary" href="#">Screenshot</a>
-                  <a class="badge badge-secondary" href="#">Milestone</a>
-                  <a class="badge badge-secondary" href="#">Version</a>
-                  <a class="badge badge-secondary" href="#">Design</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Job</a>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">About</h6>
-                <p class="small-3">TheSaaS is a responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4. TheSaaS is a powerful and super flexible tool for any kind of landing pages.</p>
-
-
-              </div>
+            <div class="col">
+              <a class="scroll-down-5" href="#scroll-top"><span></span></a>
             </div>
 
           </div>
+
+
+
+          <h6 class="divider mt-8">White</h6>
+
+
+
+          <div class="row text-center bg-primary py-6">
+
+            <div class="col">
+              <a class="scroll-down-1 scroll-down-white" href="#scroll-top"><span></span></a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-2 scroll-down-white" href="#scroll-top"><span></span></a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-3 scroll-down-white" href="#scroll-top">
+                <span></span><span></span><span></span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-4 scroll-down-white" href="#scroll-top"><span></span></a>
+            </div>
+
+            <div class="col">
+              <a class="scroll-down-5 scroll-down-white" href="#scroll-top"><span></span></a>
+            </div>
+
+          </div>
+
+
         </div>
-      </div>
-    </main>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Scroll top
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="scroll-top" class="section bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <small>Scroll</small>
+            <h2>Scroll Top</h2>
+            <hr>
+            <p class="lead">Include a scroll to top button inside your pages to help user bad to header of page with one click.</p>
+          </header>
+
+
+          <p>Add following code to your page, maybe after your footer:</p>
+          <pre><code>&lt;button class="btn btn-circle btn-primary scroll-top">&lt;i class="fa fa-angle-up">&lt;/i>&lt;/button></code></pre>
+
+
+        </div>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Scroll to section
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Scroll</small>
+            <h2>Scroll To Section</h2>
+            <hr>
+            <p class="lead">Send your visitors to a specific section by clicking a button</p>
+          </header>
+
+
+          <p>For this purpose, you need to add an ID attribute to your target element, probably your <i>&lt;section></i>. Then, use that ID in value of <code>href</code> attribute of your <em>&lt;a></em> tag. For example, you have a demo section with following code:</p>
+
+          <pre><code>&lt;section class="section" id="section-demo">&lt;/section></code></pre>
+
+          <p>To scroll to the demo section, you need a link tag with <code>href="#section-demo"</code>, so it can scroll to the target element upon click. A sample button is as follow:</p>
+
+          <pre><code>&lt;a class="btn btn-primary" href="#section-demo">See demos&lt;/a></code></pre>
+
+          <hr class="my-7">
+
+          <p class="text-center"><a class="btn btn-lg btn-round btn-danger" href="#section-flash-down">Move to flash downs</a></p>
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Animate On Scroll (AOS)
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="aos" class="section overflow-hidden bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <small>AOS</small>
+            <h2>Animate On Scroll</h2>
+            <hr>
+            <p class="lead">Small library to animate elements on your page as you scroll.</p>
+            <p class="small-2"><a href="https://github.com/michalsnik/aos" target="_blank">Official Website</a></p>
+          </header>
+
+
+          <p>AOS allows you to animate elements as you scroll down, and up. If you scroll back to top, elements will animate to it's previous state and are ready to animate again if you scroll down.</p>
+
+          <p>All you have to do is to add <code>data-aos</code> attribute to html element, like so:</p>
+          <pre><code>&lt;div data-aos="animation_name"></code></pre>
+
+          <p>Also, you can set other options such as duration, delay and offset:</p>
+          <pre><code>&lt;div data-aos-duration="1300" data-aos-delay="500" data-aos-offset="200"></code></pre>
+
+          <p>To see the list of available animations, visit the <a href="https://github.com/michalsnik/aos#-animations" target="_blank">oficial documentation</a>.</p>
+
+          <p>It's recommended to add class <code>.overflow-hidden</code> to each section that contains animation, so you can be sure that your animated objects don't display outside of the section.</p>
+
+          <br><br>
+          <div class="row">
+
+            <div class="col h-200 bg-primary" data-aos="fade-up"></div>
+            <div class="col h-200 bg-danger" data-aos="slide-up" data-aos-delay="500"></div>
+            <div class="col h-200 bg-warning" data-aos="zoom-in" data-aos-delay="1000"></div>
+            <div class="col h-200 bg-dark" data-aos="flip-up" data-aos-delay="1500"></div>
+            <div class="col h-200 bg-success" data-aos="slide-left" data-aos-delay="2000"></div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+    </main><!-- /.main-content -->
 
 
     <!-- Footer -->
@@ -542,9 +561,13 @@
     </footer><!-- /.footer -->
 
 
+    <!-- Scroll top -->
+    <button class="btn btn-circle btn-primary scroll-top"><i class="fa fa-angle-up"></i></button>
+
+
     <!-- Scripts -->
-    <script src="{{ asset('js/page.min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 
   </body>
 </html>

@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="A slideshow component for cycling through elements—images or slides of text—like a carousel.">
+    <meta name="keywords" content="slider, slideshow, carousel, slick, plugin">
 
-    <title>TheSaaS — Blog with sidebar</title>
+    <title>TheSaaS — Slider</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
-    <link rel="icon" href="{{asset('img/favicon.png')}}">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
   </head>
 
   <body>
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
       <div class="container">
 
         <div class="navbar-left">
@@ -168,12 +168,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="#">Blog <span class="arrow"></span></a>
+              <a class="nav-link" href="#">Blog <span class="arrow"></span></a>
               <nav class="nav">
                 <a class="nav-link" href="../blog/classic.html">Classic</a>
                 <a class="nav-link" href="../blog/grid.html">Grid</a>
                 <a class="nav-link" href="../blog/list.html">List</a>
-                <a class="nav-link active" href="../blog/sidebar.html">Sidebar</a>
+                <a class="nav-link" href="../blog/sidebar.html">Sidebar</a>
                 <div class="nav-divider"></div>
                 <a class="nav-link" href="../blog/post-1.html">Post 1</a>
                 <a class="nav-link" href="../blog/post-2.html">Post 2</a>
@@ -247,7 +247,7 @@
             </li>
 
             <li class="nav-item nav-mega">
-              <a class="nav-link" href="#">UI Kit <span class="arrow"></span></a>
+              <a class="nav-link active" href="#">UI Kit <span class="arrow"></span></a>
               <nav class="nav px-lg-2 py-lg-4">
                 <div class="container-fluid">
                   <div class="row">
@@ -300,7 +300,7 @@
                     <div class="col-lg-3">
                       <nav class="nav flex-column">
                         <a class="nav-link" href="../uikit/shuffle.html">Shuffle</a>
-                        <a class="nav-link" href="../uikit/slider.html">Slider</a>
+                        <a class="nav-link active" href="../uikit/slider.html">Slider</a>
                         <a class="nav-link" href="../uikit/social.html">Social</a>
                         <a class="nav-link" href="../uikit/tab.html">Tab</a>
                         <a class="nav-link" href="../uikit/table.html">Table</a>
@@ -327,186 +327,326 @@
 
 
     <!-- Header -->
-    <header class="header text-center text-white" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
+    <header class="header pb-9 pt-10" style="background-image: url(../assets/img/bg/4.jpg)">
       <div class="container">
-
         <div class="row">
-          <div class="col-md-8 mx-auto">
+          <div class="col-md-6">
+            <h1 class="fw-200 mb-6">Slider</h1>
+            <p class="lead-2">A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
+            <p class="small-3 fw-400"><a href="https://github.com/kenwheeler/slick/" target="_blank">Official Website</a></p>
 
-            <h1>Latest Blog Posts</h1>
-            <p class="lead-2 opacity-90 mt-6">Read and get updated on how we progress</p>
+            <hr class="w-50px ml-0">
 
+            <a class="text-dark opacity-50 small" href="index.html">Also, visit our documentation page.</a>
           </div>
         </div>
-
       </div>
     </header><!-- /.header -->
 
 
     <!-- Main Content -->
     <main class="main-content">
-      <div class="section bg-gray">
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Basic
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="basic" class="section">
         <div class="container">
+          <header class="section-header">
+            <h2>Basic</h2>
+            <hr>
+            <p class="lead">Setup a slider with data attributes and modify some options.</p>
+          </header>
+
+
           <div class="row">
+            <div class="col-md-6 mx-auto">
 
-
-            <div class="col-md-8 col-xl-9">
-              <div class="row gap-y">
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/1.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">News</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">We relocated our office to a new designed garage</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/2.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Marketing</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Top 5 brilliant content marketing strategies</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/3.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Design</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Best practices for minimalist design with example</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/4.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Hiring</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Congratulate and thank to Maryam for joining our team</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/5.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Product</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">New published books to read by a product designer</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/6.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Management</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">This is why it's time to ditch dress codes at work</a></h5>
-                    </div>
-                  </div>
-                </div>
-
+              <div data-provide="slider">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
               </div>
 
 
-              <nav class="flexbox mt-30">
-                <a class="btn btn-white disabled"><i class="ti-arrow-left fs-9 mr-4"></i> Newer</a>
-                <a class="btn btn-white" href="#">Older <i class="ti-arrow-right fs-9 ml-4"></i></a>
-              </nav>
-            </div>
-
-
-
-            <div class="col-md-4 col-xl-3">
-              <div class="sidebar px-4 py-md-0">
-
-                <h6 class="sidebar-title">Search</h6>
-                <form class="input-group" target="#" method="GET">
-                  <input type="text" class="form-control" name="s" placeholder="Search">
-                  <div class="input-group-addon">
-                    <span class="input-group-text"><i class="ti-search"></i></span>
-                  </div>
-                </form>
-
-                <hr>
-
-                <h6 class="sidebar-title">Categories</h6>
-                <div class="row link-color-default fs-14 lh-24">
-                  <div class="col-6"><a href="#">News</a></div>
-                  <div class="col-6"><a href="#">Updates</a></div>
-                  <div class="col-6"><a href="#">Design</a></div>
-                  <div class="col-6"><a href="#">Marketing</a></div>
-                  <div class="col-6"><a href="#">Partnership</a></div>
-                  <div class="col-6"><a href="#">Product</a></div>
-                  <div class="col-6"><a href="#">Hiring</a></div>
-                  <div class="col-6"><a href="#">Offers</a></div>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">Top posts</h6>
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/4.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Thank to Maryam for joining our team</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/3.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Best practices for minimalist design</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/5.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">New published books for product designers</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/2.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Top 5 brilliant content marketing strategies</p>
-                </a>
-
-                <hr>
-
-                <h6 class="sidebar-title">Tags</h6>
-                <div class="gap-multiline-items-1">
-                  <a class="badge badge-secondary" href="#">Record</a>
-                  <a class="badge badge-secondary" href="#">Progress</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Freebie</a>
-                  <a class="badge badge-secondary" href="#">Offer</a>
-                  <a class="badge badge-secondary" href="#">Screenshot</a>
-                  <a class="badge badge-secondary" href="#">Milestone</a>
-                  <a class="badge badge-secondary" href="#">Version</a>
-                  <a class="badge badge-secondary" href="#">Design</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Job</a>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">About</h6>
-                <p class="small-3">TheSaaS is a responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4. TheSaaS is a powerful and super flexible tool for any kind of landing pages.</p>
-
-
+              <h6 class="divider mt-8">Autoplay</h6>
+              <div data-provide="slider" data-autoplay="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
               </div>
-            </div>
 
+
+              <h6 class="divider mt-8">Autoplay speed</h6>
+              <div data-provide="slider" data-autoplay="true" data-autoplay-speed="1000">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+              <h6 class="divider mt-8">Transition speed</h6>
+              <div data-provide="slider" data-autoplay="true" data-speed="2000">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+            </div>
           </div>
+
+
         </div>
-      </div>
-    </main>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Arrows
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="arrows" class="section bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <h2>Arrows</h2>
+            <hr>
+            <p class="lead">Enable next and previous buttons by adding <code>data-arrows="true"</code>.</p>
+          </header>
+
+
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+
+              <div data-provide="slider" data-arrows="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+              <h6 class="divider mt-8">Circle light</h6>
+              <div class="slider-arrows-circle-light px-8" data-provide="slider" data-arrows="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+              <h6 class="divider mt-8">Circle dark</h6>
+              <div class="slider-arrows-circle-dark px-8" data-provide="slider" data-arrows="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+
+              <h6 class="divider mt-8">Flash dark</h6>
+              <div class="slider-arrows-flash-dark px-8" data-provide="slider" data-arrows="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+
+              <h6 class="divider mt-8">Flash light</h6>
+              <div class="bg-primary rounded px-5 py-7">
+                <div class="slider-arrows-flash-light px-8" data-provide="slider" data-arrows="true">
+                  <div><img src="../assets/img/thumb/1.jpg"></div>
+                  <div><img src="../assets/img/thumb/2.jpg"></div>
+                  <div><img src="../assets/img/thumb/3.jpg"></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Dots
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="dots" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Dots</h2>
+            <hr>
+            <p class="lead">Enable dot navigation on your slider by adding <code>data-dots="true"</code>.</p>
+          </header>
+
+
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+
+
+              <div data-provide="slider" data-dots="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+
+              <h6 class="divider mt-8">Fill</h6>
+              <div class="slider-dots-fill" data-provide="slider" data-dots="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+              <h6 class="divider mt-8">Fill primary</h6>
+              <div class="slider-dots-fill-primary" data-provide="slider" data-dots="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+
+              <h6 class="divider mt-8">Line</h6>
+              <div class="slider-dots-line" data-provide="slider" data-dots="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+
+              <h6 class="divider mt-8">White</h6>
+              <div class="bg-primary rounded px-5 py-7">
+                <div class="slider-dots-line slider-dots-white" data-provide="slider" data-dots="true">
+                  <div><img src="../assets/img/thumb/1.jpg"></div>
+                  <div><img src="../assets/img/thumb/2.jpg"></div>
+                  <div><img src="../assets/img/thumb/3.jpg"></div>
+                </div>
+              </div>
+
+
+
+              <h6 class="divider mt-8">Dots inside</h6>
+              <div class="slider-dots-inside" data-provide="slider" data-dots="true">
+                <div><img src="../assets/img/thumb/1.jpg"></div>
+                <div><img src="../assets/img/thumb/2.jpg"></div>
+                <div><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Advanced
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section id="advanced" class="section bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <h2>Advanced</h2>
+            <hr>
+            <p class="lead">More configuration options such as setting number of slides to show and center mode.</p>
+          </header>
+
+
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+
+              <h6 class="divider">Slides to show</h6>
+              <div data-provide="slider" data-slides-to-show="3">
+                <div class="p-2"><img src="../assets/img/thumb/1.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/2.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/3.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/5.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/4.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/10.jpg"></div>
+              </div>
+
+
+              <h6 class="divider">Slides to scroll</h6>
+              <div data-provide="slider" data-slides-to-show="3" data-slides-to-scroll="2" data-dots="true">
+                <div class="p-2"><img src="../assets/img/thumb/1.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/2.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/3.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/5.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/4.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/10.jpg"></div>
+              </div>
+
+
+              <h6 class="divider mt-8">Center mode</h6>
+              <div class="slider-center-focused" data-provide="slider" data-slides-to-show="3" data-center-mode="true">
+                <div class="p-2"><img src="../assets/img/thumb/1.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/2.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/3.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/5.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/4.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/10.jpg"></div>
+              </div>
+
+
+              <h6 class="divider mt-8">Center mode padding</h6>
+              <div class="slider-center-focused" data-provide="slider" data-center-mode="true" data-center-padding="20%">
+                <div class="p-2"><img src="../assets/img/thumb/1.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/2.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/3.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/5.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/4.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/10.jpg"></div>
+              </div>
+
+
+              <h6 class="divider mt-8">Fade</h6>
+              <div data-provide="slider" data-autoplay="true" data-fade="true" data-dots="true">
+                <div class="p-2"><img src="../assets/img/thumb/1.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/2.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/3.jpg"></div>
+              </div>
+
+
+              <h6 class="divider mt-8">Syncing</h6>
+              <div id="slider-image" data-provide="slider" data-as-nav-for="#slider-thumb">
+                <div class="p-2"><img src="../assets/img/thumb/1.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/2.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/3.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/5.jpg"></div>
+                <div class="p-2"><img src="../assets/img/thumb/4.jpg"></div>
+              </div>
+
+              <div id="slider-thumb" data-provide="slider" data-as-nav-for="#slider-image" data-slides-to-show="3" data-center-mode="true" data-dots="true" data-focus-on-select="true">
+                <div class="p-2"><img class="cursor-pointer" src="../assets/img/thumb/1.jpg"></div>
+                <div class="p-2"><img class="cursor-pointer" src="../assets/img/thumb/2.jpg"></div>
+                <div class="p-2"><img class="cursor-pointer" src="../assets/img/thumb/3.jpg"></div>
+                <div class="p-2"><img class="cursor-pointer" src="../assets/img/thumb/5.jpg"></div>
+                <div class="p-2"><img class="cursor-pointer" src="../assets/img/thumb/4.jpg"></div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+    </main><!-- /.main-content -->
 
 
     <!-- Footer -->
@@ -543,8 +683,8 @@
 
 
     <!-- Scripts -->
-    <script src="{{ asset('js/page.min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 
   </body>
 </html>

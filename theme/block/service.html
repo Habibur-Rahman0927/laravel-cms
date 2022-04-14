@@ -6,22 +6,22 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>TheSaaS — Blog with sidebar</title>
+    <title>TheSaaS — Service blocks</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
-    <link rel="icon" href="{{asset('img/favicon.png')}}">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
   </head>
 
-  <body>
+  <body class="demo-section">
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
       <div class="container">
 
         <div class="navbar-left">
@@ -168,12 +168,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="#">Blog <span class="arrow"></span></a>
+              <a class="nav-link" href="#">Blog <span class="arrow"></span></a>
               <nav class="nav">
                 <a class="nav-link" href="../blog/classic.html">Classic</a>
                 <a class="nav-link" href="../blog/grid.html">Grid</a>
                 <a class="nav-link" href="../blog/list.html">List</a>
-                <a class="nav-link active" href="../blog/sidebar.html">Sidebar</a>
+                <a class="nav-link" href="../blog/sidebar.html">Sidebar</a>
                 <div class="nav-divider"></div>
                 <a class="nav-link" href="../blog/post-1.html">Post 1</a>
                 <a class="nav-link" href="../blog/post-2.html">Post 2</a>
@@ -191,7 +191,7 @@
             </li>
 
             <li class="nav-item nav-mega">
-              <a class="nav-link" href="#">Blocks <span class="arrow"></span></a>
+              <a class="nav-link active" href="#">Blocks <span class="arrow"></span></a>
               <nav class="nav px-lg-2 py-lg-4">
                 <div class="container-fluid">
                   <div class="row">
@@ -231,7 +231,7 @@
                         <a class="nav-link" href="../block/portfolio.html">Portfolio</a>
                         <a class="nav-link" href="../block/pricing.html">Pricing</a>
                         <a class="nav-link" href="../block/process.html">Process</a>
-                        <a class="nav-link" href="../block/service.html">Service</a>
+                        <a class="nav-link active" href="../block/service.html">Service</a>
                         <a class="nav-link" href="../block/shop.html">Shop</a>
                         <a class="nav-link" href="../block/signup.html">Signup</a>
                         <a class="nav-link" href="../block/subscribe.html">Subscribe</a>
@@ -327,186 +327,325 @@
 
 
     <!-- Header -->
-    <header class="header text-center text-white" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
+    <header class="header pb-9 pt-10 mb-9" style="background-image: url(../assets/img/bg/4.jpg)">
       <div class="container">
-
         <div class="row">
-          <div class="col-md-8 mx-auto">
+          <div class="col-md-6">
+            <h1 class="fw-200 mb-6">Service Blocks</h1>
+            <p class="lead-2">Display different type of services which you can provide to your customers with detail.</p>
 
-            <h1>Latest Blog Posts</h1>
-            <p class="lead-2 opacity-90 mt-6">Read and get updated on how we progress</p>
+            <hr class="w-50px ml-0">
 
+            <a class="text-muted" href="index.html">Explore all the available blocks</a>
           </div>
         </div>
-
       </div>
     </header><!-- /.header -->
 
 
     <!-- Main Content -->
     <main class="main-content">
-      <div class="section bg-gray">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 1
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-1" class="block-number"><a href="#block-1">Block 1</a></h6>
+
+      <section class="section">
         <div class="container">
+          <header class="section-header">
+            <small>Services</small>
+            <h2>Our Services</h2>
+            <hr>
+            <p class="lead">Join thousands of satisfied customers using our template globally.</p>
+          </header>
+
+
           <div class="row">
 
+            <div class="col-md-6 col-xl-4 ml-lg-auto">
+              <h6 class="bt-2 border-secondary py-5"><a href="#">Website Design</a></h6>
+              <p>Written enquire painful to offices forming it. Then so does over sent dull. Likewise offended humour mrs fat trifling answered. On ye position greatest so desirous enable performance based.</p>
+              <br><br>
+            </div>
 
-            <div class="col-md-8 col-xl-9">
-              <div class="row gap-y">
+            <div class="col-md-6 col-xl-4 mr-lg-auto">
+              <h6 class="bt-2 border-info py-5"><a href="#">Application Development</a></h6>
+              <p>Written enquire painful to offices forming it. Then so does over sent dull. Likewise offended humour mrs fat trifling answered. On ye position greatest so desirous enable performance based.</p>
+              <br><br>
+            </div>
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/1.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">News</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">We relocated our office to a new designed garage</a></h5>
-                    </div>
-                  </div>
-                </div>
+            <div class="w-100"></div>
 
+            <div class="col-md-6 col-xl-4 ml-lg-auto">
+              <h6 class="bt-2 border-secondary py-5"><a href="#">Branding Package</a></h6>
+              <p>Written enquire painful to offices forming it. Then so does over sent dull. Likewise offended humour mrs fat trifling answered. On ye position greatest so desirous enable performance based.</p>
+              <br><br>
+            </div>
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/2.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Marketing</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Top 5 brilliant content marketing strategies</a></h5>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-md-6 col-xl-4 mr-lg-auto">
+              <h6 class="bt-2 border-secondary py-5"><a href="#">Advertisement</a></h6>
+              <p>Written enquire painful to offices forming it. Then so does over sent dull. Likewise offended humour mrs fat trifling answered. On ye position greatest so desirous enable performance based.</p>
+              <br><br>
+            </div>
 
+          </div>
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/3.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Design</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Best practices for minimalist design with example</a></h5>
-                    </div>
-                  </div>
-                </div>
+        </div>
+      </section>
 
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/4.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Hiring</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Congratulate and thank to Maryam for joining our team</a></h5>
-                    </div>
-                  </div>
-                </div>
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 2
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-2" class="block-number"><a href="#block-2">Block 2</a></h6>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Services</small>
+            <h2>Our Services</h2>
+            <hr>
+            <p class="lead">Join thousands of satisfied customers using our template globally.</p>
+          </header>
 
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/5.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Product</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">New published books to read by a product designer</a></h5>
-                    </div>
-                  </div>
-                </div>
+          <div class="row">
 
+            <div class="col-md-6 col-xl-4 ml-auto">
+              <h5><a href="#">Website Design</a></h5>
+              <p class="small opacity-50">Responsive, Minimalism</p>
+            </div>
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/6.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Management</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">This is why it's time to ditch dress codes at work</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <nav class="flexbox mt-30">
-                <a class="btn btn-white disabled"><i class="ti-arrow-left fs-9 mr-4"></i> Newer</a>
-                <a class="btn btn-white" href="#">Older <i class="ti-arrow-right fs-9 ml-4"></i></a>
-              </nav>
+            <div class="col-md-6">
+              <p>So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his. Their to years so child truth. Honoured peculiar families sensible up likewise by on in.</p>
+              <br><br>
             </div>
 
 
+            <div class="col-md-6 col-xl-4 ml-auto">
+              <h5><a href="#">Web Development</a></h5>
+              <p class="small opacity-50">PHP, MySQL, Laravel</p>
+            </div>
 
-            <div class="col-md-4 col-xl-3">
-              <div class="sidebar px-4 py-md-0">
-
-                <h6 class="sidebar-title">Search</h6>
-                <form class="input-group" target="#" method="GET">
-                  <input type="text" class="form-control" name="s" placeholder="Search">
-                  <div class="input-group-addon">
-                    <span class="input-group-text"><i class="ti-search"></i></span>
-                  </div>
-                </form>
-
-                <hr>
-
-                <h6 class="sidebar-title">Categories</h6>
-                <div class="row link-color-default fs-14 lh-24">
-                  <div class="col-6"><a href="#">News</a></div>
-                  <div class="col-6"><a href="#">Updates</a></div>
-                  <div class="col-6"><a href="#">Design</a></div>
-                  <div class="col-6"><a href="#">Marketing</a></div>
-                  <div class="col-6"><a href="#">Partnership</a></div>
-                  <div class="col-6"><a href="#">Product</a></div>
-                  <div class="col-6"><a href="#">Hiring</a></div>
-                  <div class="col-6"><a href="#">Offers</a></div>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">Top posts</h6>
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/4.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Thank to Maryam for joining our team</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/3.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Best practices for minimalist design</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/5.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">New published books for product designers</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/2.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Top 5 brilliant content marketing strategies</p>
-                </a>
-
-                <hr>
-
-                <h6 class="sidebar-title">Tags</h6>
-                <div class="gap-multiline-items-1">
-                  <a class="badge badge-secondary" href="#">Record</a>
-                  <a class="badge badge-secondary" href="#">Progress</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Freebie</a>
-                  <a class="badge badge-secondary" href="#">Offer</a>
-                  <a class="badge badge-secondary" href="#">Screenshot</a>
-                  <a class="badge badge-secondary" href="#">Milestone</a>
-                  <a class="badge badge-secondary" href="#">Version</a>
-                  <a class="badge badge-secondary" href="#">Design</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Job</a>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">About</h6>
-                <p class="small-3">TheSaaS is a responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4. TheSaaS is a powerful and super flexible tool for any kind of landing pages.</p>
+            <div class="col-md-6">
+              <p>So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his. Their to years so child truth. Honoured peculiar families sensible up likewise by on in.</p>
+              <br><br>
+            </div>
 
 
+            <div class="col-md-6 col-xl-4 ml-auto">
+              <h5><a href="#">Mobile App</a></h5>
+              <p class="small opacity-50">Andriod, iOS</p>
+            </div>
+
+            <div class="col-md-6">
+              <p>So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid. Up on cousin ye dinner should in. Sex stood tried walls manor truth shy and three his. Their to years so child truth. Honoured peculiar families sensible up likewise by on in.</p>
+              <br><br>
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 3
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-3" class="block-number"><a href="#block-3">Block 3</a></h6>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Services</small>
+            <h2>Our Services</h2>
+            <hr>
+            <p class="lead">Join thousands of satisfied customers using our template globally.</p>
+          </header>
+
+
+          <div class="row gap-y">
+
+            <div class="col-md-6 col-xl-3">
+              <div class="card card-body shadow-3 text-center bg-success text-white">
+                <p class="my-5"><i class="icon-browser lead-6"></i></p>
+                <h5 class="mb-5 fw-500"><a href="#">Web Design</a></h5>
+                <p>He polite be object change. Consider no overcame yourself sociable children.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+              <div class="card card-body shadow-3 text-center">
+                <p class="my-5"><i class="icon-mobile lead-6"></i></p>
+                <h5 class="mb-5 fw-500"><a href="#">Mobile App</a></h5>
+                <p>He polite be object change. Consider no overcame yourself sociable children.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+              <div class="card card-body shadow-3 text-center bg-info text-white">
+                <p class="my-5"><i class="icon-linegraph lead-6"></i></p>
+                <h5 class="mb-5 fw-500"><a href="#">Digital Marketing</a></h5>
+                <p>He polite be object change. Consider no overcame yourself sociable children.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+              <div class="card card-body shadow-3 text-center">
+                <p class="my-5"><i class="icon-megaphone lead-6"></i></p>
+                <h5 class="mb-5 fw-500"><a href="#">Branding Package</a></h5>
+                <p>He polite be object change. Consider no overcame yourself sociable children.</p>
               </div>
             </div>
 
           </div>
+
+
         </div>
-      </div>
-    </main>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 4
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-4" class="block-number"><a href="#block-4">Block 4</a></h6>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Services</small>
+            <h2>Our Services</h2>
+            <hr>
+            <p class="lead">Join thousands of satisfied customers using our template globally.</p>
+          </header>
+
+
+          <div class="row gap-y">
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-mobile text-primary lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-primary">
+              <h6>Responsive design</h6>
+              <p>Now for manners use has company believe parlors. Least nor party who wrote while did.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-gears text-success lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-success">
+              <h6>Customizable</h6>
+              <p>Now for manners use has company believe parlors. Least nor party who wrote while did.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-tools text-info lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-info">
+              <h6>UI Kit</h6>
+              <p>Now for manners use has company believe parlors. Least nor party who wrote while did.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-layers text-danger lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-danger">
+              <h6>Lego Base</h6>
+              <p>Now for manners use has company believe parlors. Least nor party who wrote while did.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-recycle text-warning lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-warning">
+              <h6>Clean Code</h6>
+              <p>Now for manners use has company believe parlors. Least nor party who wrote while did.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <p><i class="icon-chat text-dark lead-6"></i></p>
+              <hr class="mt-0 ml-0 w-10 border-dark">
+              <h6>Support</h6>
+              <p>Now for manners use has company believe parlors. Least nor party who wrote while did.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Block 5
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <h6 id="block-5" class="block-number"><a href="#block-5">Block 5</a></h6>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Benefits</small>
+            <h2>About Working Here</h2>
+            <hr>
+            <p class="lead">We are so excited and proud of our product. It's really easy to create a landing page.</p>
+          </header>
+
+
+          <div class="row text-center">
+            <div class="col-md-10 mx-auto">
+              <div class="row gap-y">
+
+
+                <div class="col-md-6">
+                  <p><i class="icon-happy text-lighter lead-6 mb-5"></i></p>
+                  <h5>Health & Wellness</h5>
+                  <p>Full health coverage for you and your family, and a $150 monthly fitness reimbursement.</p>
+                </div>
+
+
+                <div class="col-md-6">
+                  <p><i class="icon-newspaper text-lighter lead-6 mb-5"></i></p>
+                  <h5>Learning & Development</h5>
+                  <p>Receive $500 annually towards a personal development opportunity of your choice.</p>
+                </div>
+
+
+                <div class="col-md-6">
+                  <p><i class="icon-profile-female text-lighter lead-6 mb-5"></i></p>
+                  <h5>Parental Leave</h5>
+                  <p>Full health coverage for you and your family, and a $150 monthly fitness reimbursement.</p>
+                </div>
+
+
+                <div class="col-md-6">
+                  <p><i class="icon-globe text-lighter lead-6 mb-5"></i></p>
+                  <h5>Work Remotely</h5>
+                  <p>A remote job is one that is done away from the office in a remote location, at any time of day.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+    </main><!-- /.main-content -->
 
 
     <!-- Footer -->
@@ -543,8 +682,8 @@
 
 
     <!-- Scripts -->
-    <script src="{{ asset('js/page.min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 
   </body>
 </html>

@@ -6,22 +6,22 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>TheSaaS — Blog with sidebar</title>
+    <title>TheSaaS — Directory structure</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
-    <link rel="icon" href="{{asset('img/favicon.png')}}">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
   </head>
 
   <body>
 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="smart">
       <div class="container">
 
         <div class="navbar-left">
@@ -83,7 +83,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Pages <span class="arrow"></span></a>
+              <a class="nav-link active" href="#">Pages <span class="arrow"></span></a>
               <ul class="nav">
                 <li class="nav-item">
                   <a class="nav-link" href="../page/how-it-works.html">How it works</a>
@@ -160,7 +160,7 @@
                   <a class="nav-link" href="#">Docs <span class="arrow"></span></a>
                   <nav class="nav">
                     <a class="nav-link" href="../docs/index.html">Support center</a>
-                    <a class="nav-link" href="../docs/articles.html">Articles</a>
+                    <a class="nav-link active" href="../docs/articles.html">Articles</a>
                     <a class="nav-link" href="../docs/faq.html">FAQ</a>
                   </nav>
                 </li>
@@ -168,12 +168,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="#">Blog <span class="arrow"></span></a>
+              <a class="nav-link" href="#">Blog <span class="arrow"></span></a>
               <nav class="nav">
                 <a class="nav-link" href="../blog/classic.html">Classic</a>
                 <a class="nav-link" href="../blog/grid.html">Grid</a>
                 <a class="nav-link" href="../blog/list.html">List</a>
-                <a class="nav-link active" href="../blog/sidebar.html">Sidebar</a>
+                <a class="nav-link" href="../blog/sidebar.html">Sidebar</a>
                 <div class="nav-divider"></div>
                 <a class="nav-link" href="../blog/post-1.html">Post 1</a>
                 <a class="nav-link" href="../blog/post-2.html">Post 2</a>
@@ -327,186 +327,138 @@
 
 
     <!-- Header -->
-    <header class="header text-center text-white" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
+    <header class="header text-white bg-dark pt-9 pb-5" style="background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);">
       <div class="container">
-
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-
-            <h1>Latest Blog Posts</h1>
-            <p class="lead-2 opacity-90 mt-6">Read and get updated on how we progress</p>
-
-          </div>
-        </div>
-
+        <h3>Knowledge Base</h3>
       </div>
     </header><!-- /.header -->
 
 
     <!-- Main Content -->
     <main class="main-content">
-      <div class="section bg-gray">
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Breadcrumbs
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <nav class="bb-1" aria-label="breadcrumb">
         <div class="container">
-          <div class="row">
+          <ol class="breadcrumb px-0">
+            <li class="breadcrumb-item"><a href="index.html">Support</a></li>
+            <li class="breadcrumb-item"><a href="articles.html">Articles</a></li>
+            <li class="breadcrumb-item">Getting started</li>
+          </ol>
+        </div>
+      </nav>
 
 
-            <div class="col-md-8 col-xl-9">
-              <div class="row gap-y">
+      <div class="container">
+        <div class="row">
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/1.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">News</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">We relocated our office to a new designed garage</a></h5>
-                    </div>
-                  </div>
-                </div>
+          <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Article
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+          <div class="col-md-7 col-xl-8 mr-md-auto py-8">
+            <article>
+              <h2 class="fw-200">Directory structure</h2>
+              <p class="lead">In this article, we look into the directory structure of the downloaded package. The default directory structure is intended to provide a great starting point for both large and small applications. Of course, you are free to organize your application however you like.</p>
 
+              <hr>
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/2.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Marketing</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Top 5 brilliant content marketing strategies</a></h5>
-                    </div>
-                  </div>
-                </div>
+              <h4>Root directory</h4>
+              <p>Once downloaded, unzip the compressed folder and you’ll see something like this:</p>
+              <pre>thesaas/
+├── starter/
+├── theme/
+└── v1.5/</pre>
+              <p>Let's see what's inside each directory and what are the pupose of each one.</p>
 
+              <h5>Starter</h5>
+              <p>It includes starter templates to get started with. This is the place you should choose a starter, copy a directory and start your project with. There's a complete documentation inside a readme.html file for each starter template.</p>
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/3.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Design</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Best practices for minimalist design with example</a></h5>
-                    </div>
-                  </div>
-                </div>
+              <h5>Theme</h5>
+              <p>This directory contains all the files that you see in the online demo. You should use these files to copy codes or files from and develop your own project. Also, it's a documentation and reference for our components.</p>
+
+              <h5>v1.5</h5>
+              <p>The previous major release of TheSaaS which is included for thousands od customers who has developed their project based on the v1.x.</p>
 
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/4.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Hiring</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Congratulate and thank to Maryam for joining our team</a></h5>
-                    </div>
-                  </div>
-                </div>
+              <hr class="hr-dash">
 
+              <h4>Assets directory</h4>
+              <p>You can see this folder contains following structure:</p>
+              <pre>assets/
+├── css/
+├── fonts/
+├── img/
+├── js/
+├── php/
+└── plugin/</pre>
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/5.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Product</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">New published books to read by a product designer</a></h5>
-                    </div>
-                  </div>
-                </div>
+              <p>As you can see, the name of sub-folders represent its responsibility.</p>
 
+              <h5>css</h5>
+              <p>The css folder contains following files and directory:</p>
+              <ul>
+                <li><strong>page.css</strong>: Unminified version of TheSaaS styles</li>
+                <li><strong>page.min.css</strong>: Minified version of TheSaaS styles</li>
+                <li><strong>style.css</strong>: Your custom styles</li>
+              </ul>
 
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/6.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Management</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">This is why it's time to ditch dress codes at work</a></h5>
-                    </div>
-                  </div>
-                </div>
+              <h5>fonts</h5>
+              <p>The fonts directory contains all files that used in our template. If you want to use local fonts and import them in your css file, you'd better to place your font files inside this folder.</p>
 
-              </div>
+              <h5>img</h5>
+              <p>This folder houses your image files that you want to use in your template, such as logo, favicon, etc.</p>
 
+              <h5>js</h5>
+              <p>The js folder contains following files:</p>
+              <ul>
+                <li><strong>page.js</strong>: Unminified version of TheSaaS JavaScripts</li>
+                <li><strong>page.min.js</strong>: Minified version of TheSaaS JavaScripts</li>
+                <li><strong>script.js</strong>: Your application configurations and custom JavaScripts</li>
+              </ul>
 
-              <nav class="flexbox mt-30">
-                <a class="btn btn-white disabled"><i class="ti-arrow-left fs-9 mr-4"></i> Newer</a>
-                <a class="btn btn-white" href="#">Older <i class="ti-arrow-right fs-9 ml-4"></i></a>
-              </nav>
-            </div>
+              <h5>php</h5>
+              <p>This directory contains all the PHP files which is somehow required for functionality of template, such as sending emails for contact us page. </p>
 
+              <h5>plugin</h5>
+              <p>While we included necessary 3rd party plugins inside core.min.js, but there is some possibilities that you would like to use other plugins in your template. This folder is the place that you should place those plugins inside.</p>
 
-
-            <div class="col-md-4 col-xl-3">
-              <div class="sidebar px-4 py-md-0">
-
-                <h6 class="sidebar-title">Search</h6>
-                <form class="input-group" target="#" method="GET">
-                  <input type="text" class="form-control" name="s" placeholder="Search">
-                  <div class="input-group-addon">
-                    <span class="input-group-text"><i class="ti-search"></i></span>
-                  </div>
-                </form>
-
-                <hr>
-
-                <h6 class="sidebar-title">Categories</h6>
-                <div class="row link-color-default fs-14 lh-24">
-                  <div class="col-6"><a href="#">News</a></div>
-                  <div class="col-6"><a href="#">Updates</a></div>
-                  <div class="col-6"><a href="#">Design</a></div>
-                  <div class="col-6"><a href="#">Marketing</a></div>
-                  <div class="col-6"><a href="#">Partnership</a></div>
-                  <div class="col-6"><a href="#">Product</a></div>
-                  <div class="col-6"><a href="#">Hiring</a></div>
-                  <div class="col-6"><a href="#">Offers</a></div>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">Top posts</h6>
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/4.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Thank to Maryam for joining our team</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/3.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Best practices for minimalist design</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/5.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">New published books for product designers</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/2.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Top 5 brilliant content marketing strategies</p>
-                </a>
-
-                <hr>
-
-                <h6 class="sidebar-title">Tags</h6>
-                <div class="gap-multiline-items-1">
-                  <a class="badge badge-secondary" href="#">Record</a>
-                  <a class="badge badge-secondary" href="#">Progress</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Freebie</a>
-                  <a class="badge badge-secondary" href="#">Offer</a>
-                  <a class="badge badge-secondary" href="#">Screenshot</a>
-                  <a class="badge badge-secondary" href="#">Milestone</a>
-                  <a class="badge badge-secondary" href="#">Version</a>
-                  <a class="badge badge-secondary" href="#">Design</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Job</a>
-                </div>
-
-                <hr>
-
-                <h6 class="sidebar-title">About</h6>
-                <p class="small-3">TheSaaS is a responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4. TheSaaS is a powerful and super flexible tool for any kind of landing pages.</p>
-
-
-              </div>
-            </div>
-
+            </article>
           </div>
+
+
+          <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Sidebar
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+          <div class="col-md-4 col-xl-3 d-none d-md-block">
+            <aside class="sidebar">
+              <h6>Related Articles</h6>
+              <ul class="nav flex-column">
+                <li class="nav-item text-truncate">
+                  <i class="fa fa-file-text-o mr-2"></i>
+                  <a class="nav-link d-inline-block" href="kb-start-html-structure.html">HTML structure</a>
+                </li>
+
+                <li class="nav-item text-truncate">
+                  <i class="fa fa-file-text-o mr-2"></i>
+                  <a class="nav-link d-inline-block" href="kb-start-get-started.html">How to get started?</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+
         </div>
       </div>
-    </main>
+
+
+    </main><!-- /.main-content -->
 
 
     <!-- Footer -->
@@ -543,8 +495,8 @@
 
 
     <!-- Scripts -->
-    <script src="{{ asset('js/page.min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 
   </body>
 </html>

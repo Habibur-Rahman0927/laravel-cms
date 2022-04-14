@@ -6,15 +6,15 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>TheSaaS — Blog with sidebar</title>
+    <title>TheSaaS — About us</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
-    <link rel="icon" href="{{asset('img/favicon.png')}}">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
   </head>
 
   <body>
@@ -83,7 +83,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Pages <span class="arrow"></span></a>
+              <a class="nav-link active" href="#">Pages <span class="arrow"></span></a>
               <ul class="nav">
                 <li class="nav-item">
                   <a class="nav-link" href="../page/how-it-works.html">How it works</a>
@@ -118,10 +118,10 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About <span class="arrow"></span></a>
+                  <a class="nav-link active" href="#">About <span class="arrow"></span></a>
                   <nav class="nav">
                     <a class="nav-link" href="../page/about-1.html">About 1</a>
-                    <a class="nav-link" href="../page/about-2.html">About 2</a>
+                    <a class="nav-link active" href="../page/about-2.html">About 2</a>
                     <a class="nav-link" href="../page/about-3.html">About 3</a>
                   </nav>
                 </li>
@@ -168,12 +168,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="#">Blog <span class="arrow"></span></a>
+              <a class="nav-link" href="#">Blog <span class="arrow"></span></a>
               <nav class="nav">
                 <a class="nav-link" href="../blog/classic.html">Classic</a>
                 <a class="nav-link" href="../blog/grid.html">Grid</a>
                 <a class="nav-link" href="../blog/list.html">List</a>
-                <a class="nav-link active" href="../blog/sidebar.html">Sidebar</a>
+                <a class="nav-link" href="../blog/sidebar.html">Sidebar</a>
                 <div class="nav-divider"></div>
                 <a class="nav-link" href="../blog/post-1.html">Post 1</a>
                 <a class="nav-link" href="../blog/post-2.html">Post 2</a>
@@ -327,14 +327,15 @@
 
 
     <!-- Header -->
-    <header class="header text-center text-white" style="background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);">
-      <div class="container">
+    <header class="header text-white" style="background-image: url(../assets/img/thumb/14.jpg);">
+      <div class="overlay opacity-75" style="background-image: linear-gradient(to top, #0d8464 0%, #4c8bb1 100%);"></div>
+      <div class="container text-center">
 
         <div class="row">
-          <div class="col-md-8 mx-auto">
+          <div class="col-md-8 mx-auto py-8">
 
-            <h1>Latest Blog Posts</h1>
-            <p class="lead-2 opacity-90 mt-6">Read and get updated on how we progress</p>
+            <h1 class="display-41">We make startups proud</h1>
+            <p class="lead-2 opacity-901 mt-6">Creating a beautiful website with high conversion is our passion</p>
 
           </div>
         </div>
@@ -345,168 +346,264 @@
 
     <!-- Main Content -->
     <main class="main-content">
-      <div class="section bg-gray">
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Our Mission
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
         <div class="container">
-          <div class="row">
+          <div class="row gap-y align-items-center">
 
+            <div class="col-md-8 mx-auto">
+              <h2>About Us</h2>
+              <p class="lead">We’re a team of creative and experienced designers and developers. We used to work as freelancers and we know what do you need and more that, we know what do your customers want from you.</p>
+              <p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</p>
+              <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.</p>
 
-            <div class="col-md-8 col-xl-9">
-              <div class="row gap-y">
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/1.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">News</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">We relocated our office to a new designed garage</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/2.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Marketing</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Top 5 brilliant content marketing strategies</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/3.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Design</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Best practices for minimalist design with example</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/4.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Hiring</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">Congratulate and thank to Maryam for joining our team</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/5.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Product</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">New published books to read by a product designer</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6">
-                  <div class="card border hover-shadow-6 mb-6 d-block">
-                    <a href="#"><img class="card-img-top" src="../assets/img/thumb/6.jpg" alt="Card image cap"></a>
-                    <div class="p-6 text-center">
-                      <p><a class="small-5 text-lighter text-uppercase ls-2 fw-400" href="#">Management</a></p>
-                      <h5 class="mb-0"><a class="text-dark" href="#">This is why it's time to ditch dress codes at work</a></h5>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <nav class="flexbox mt-30">
-                <a class="btn btn-white disabled"><i class="ti-arrow-left fs-9 mr-4"></i> Newer</a>
-                <a class="btn btn-white" href="#">Older <i class="ti-arrow-right fs-9 ml-4"></i></a>
-              </nav>
             </div>
 
+          </div>
+        </div>
+      </section>
 
 
-            <div class="col-md-4 col-xl-3">
-              <div class="sidebar px-4 py-md-0">
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Numbers
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section bg-gray">
+        <div class="container">
+          <div class="row gap-y">
 
-                <h6 class="sidebar-title">Search</h6>
-                <form class="input-group" target="#" method="GET">
-                  <input type="text" class="form-control" name="s" placeholder="Search">
-                  <div class="input-group-addon">
-                    <span class="input-group-text"><i class="ti-search"></i></span>
-                  </div>
-                </form>
-
-                <hr>
-
-                <h6 class="sidebar-title">Categories</h6>
-                <div class="row link-color-default fs-14 lh-24">
-                  <div class="col-6"><a href="#">News</a></div>
-                  <div class="col-6"><a href="#">Updates</a></div>
-                  <div class="col-6"><a href="#">Design</a></div>
-                  <div class="col-6"><a href="#">Marketing</a></div>
-                  <div class="col-6"><a href="#">Partnership</a></div>
-                  <div class="col-6"><a href="#">Product</a></div>
-                  <div class="col-6"><a href="#">Hiring</a></div>
-                  <div class="col-6"><a href="#">Offers</a></div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-6">
+                  <h4 class="lead-7 text-right" data-provide="countup" data-from="0" data-to="42"></h4>
                 </div>
 
-                <hr>
+                <div class="col-6">
+                  <p class="small text-uppercase ls-2 mb-2">Projects</p>
+                  <p><i class="icon-briefcase lead-4 mb-0"></i></p>
+                </div>
+              </div>
+            </div>
 
-                <h6 class="sidebar-title">Top posts</h6>
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/4.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Thank to Maryam for joining our team</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/3.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Best practices for minimalist design</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/5.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">New published books for product designers</p>
-                </a>
-
-                <a class="media text-default align-items-center mb-5" href="blog-single.html">
-                  <img class="rounded w-65px mr-4" src="../assets/img/thumb/2.jpg">
-                  <p class="media-body small-2 lh-4 mb-0">Top 5 brilliant content marketing strategies</p>
-                </a>
-
-                <hr>
-
-                <h6 class="sidebar-title">Tags</h6>
-                <div class="gap-multiline-items-1">
-                  <a class="badge badge-secondary" href="#">Record</a>
-                  <a class="badge badge-secondary" href="#">Progress</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Freebie</a>
-                  <a class="badge badge-secondary" href="#">Offer</a>
-                  <a class="badge badge-secondary" href="#">Screenshot</a>
-                  <a class="badge badge-secondary" href="#">Milestone</a>
-                  <a class="badge badge-secondary" href="#">Version</a>
-                  <a class="badge badge-secondary" href="#">Design</a>
-                  <a class="badge badge-secondary" href="#">Customers</a>
-                  <a class="badge badge-secondary" href="#">Job</a>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-6">
+                  <h4 class="lead-7 text-right" data-provide="countup" data-from="0" data-to="3500"></h4>
                 </div>
 
-                <hr>
+                <div class="col-6">
+                  <p class="small text-uppercase ls-2 mb-2">Customers</p>
+                  <p><i class="icon-profile-male lead-4 mb-0"></i></p>
+                </div>
+              </div>
+            </div>
 
-                <h6 class="sidebar-title">About</h6>
-                <p class="small-3">TheSaaS is a responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4. TheSaaS is a powerful and super flexible tool for any kind of landing pages.</p>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-6">
+                  <h4 class="lead-7 text-right" data-provide="countup" data-from="0" data-to="100" data-prefix="%"></h4>
+                </div>
 
-
+                <div class="col-6">
+                  <p class="small text-uppercase ls-2 mb-2">Satisfaction</p>
+                  <p><i class="icon-happy lead-4 mb-0"></i></p>
+                </div>
               </div>
             </div>
 
           </div>
         </div>
-      </div>
-    </main>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Services
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>Services</small>
+            <h2>Get Some Help</h2>
+            <hr>
+            <p class="lead">We are able to help your team in the following ways. Don't hesitate to contact us for more information.</p>
+          </header>
+
+
+          <div class="row gap-y">
+
+            <div class="col-md-6 col-xl-4">
+              <div class="text-center">
+                <p class="mb-6"><i class="icon-tools text-primary lead-8"></i></p>
+                <h5><strong>Branding & Design</strong></h5>
+                <p>Your web pages looks good on all devices and screen sizes, including desktop, tablet and mobile.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <div class="text-center">
+                <p class="mb-6"><i class="icon-mobile text-primary lead-8"></i></p>
+                <h5><strong>Mobile App</strong></h5>
+                <p>Your web pages looks good on all devices and screen sizes, including desktop, tablet and mobile.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <div class="text-center">
+                <p class="mb-6"><i class="icon-browser text-primary lead-8"></i></p>
+                <h5><strong>Web Applications</strong></h5>
+                <p>Your web pages looks good on all devices and screen sizes, including desktop, tablet and mobile.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Testimonial
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section py-9" style="background-image: url(../assets/img/thumb/18.jpg)">
+        <div class="overlay opacity-90" style="background-image: linear-gradient(90deg, #fff 0%, transparent 100%);"></div>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-10 col-md-7 col-xl-5">
+              <div class="section-dialog shadow-4">
+                <h5 class="fw-500">Highly recommend this template</h5>
+                <blockquote class="blockquote text-left lead-1 mb-0 mt-5">
+                  <p>All it harmonics; Such based to pity of and rank people brief three their time and the this the should service employed.</p>
+                  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Team
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <small>People</small>
+            <h2>The Amazing Team</h2>
+            <hr>
+            <p class="lead">Meet our small team that make those great products.</p>
+          </header>
+
+          <div class="row gap-y">
+            <div class="col-md-4 team-2">
+              <a href="#">
+                <img src="../assets/img/avatar/1.jpg" alt="...">
+              </a>
+              <h5>Morgan Guadis</h5>
+              <small>Co-Founder & CEO</small>
+              <p>Signs you'll a, life itself to in signs seed under fruitful good open behold Our of stars whales forth.</p>
+              <br>
+              <div class="social social-brand">
+                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="social-gplus" href="#"><i class="fa fa-google-plus"></i></a>
+                <a class="social-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 team-2">
+              <a href="#">
+                <img src="../assets/img/avatar/2.jpg" alt="...">
+              </a>
+              <h5>John Senating</h5>
+              <small>Co-Founder & CTO</small>
+              <p>So firmament sea them sea. Set saying land signs had the us replenish seed moved rule, place let.</p>
+              <br>
+              <div class="social social-brand">
+                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="social-gplus" href="#"><i class="fa fa-google-plus"></i></a>
+                <a class="social-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 team-2">
+              <a href="#">
+                <img src="../assets/img/avatar/3.jpg" alt="...">
+              </a>
+              <h5>Sandi Hormez</h5>
+              <small>Director</small>
+              <p>Given of living created living fifth him Give heaven made open day, own land hath one him darkness.</p>
+              <br>
+              <div class="social social-brand">
+                <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="social-gplus" href="#"><i class="fa fa-google-plus"></i></a>
+                <a class="social-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Contact
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <section class="section bg-gray">
+        <div class="container">
+
+          <h2 class="text-center mb-7">Poke Us</h2>
+
+          <form class="form-row" action="../assets/php/sendmail.php" method="POST" data-form="mailer">
+            <div class="col-12">
+              <div class="alert alert-success d-on-success">We received your message and will contact you back soon.</div>
+            </div>
+
+            <div class="form-group col-sm-6 col-lg-3">
+              <input class="form-control" type="text" name="name" placeholder="Your Name">
+            </div>
+
+            <div class="form-group col-sm-6 col-lg-3">
+              <input class="form-control" type="email" name="email" placeholder="Email Address">
+            </div>
+
+            <div class="form-group col-sm-6 col-lg-3">
+              <input class="form-control" type="text" name="company" placeholder="Company Name">
+            </div>
+
+            <div class="form-group col-sm-6 col-lg-3">
+              <button class="btn btn-block btn-primary" type="submit">Send Message</button>
+            </div>
+          </form>
+
+        </div>
+      </section>
+
+
+    </main><!-- /.main-content -->
 
 
     <!-- Footer -->
@@ -543,8 +640,8 @@
 
 
     <!-- Scripts -->
-    <script src="{{ asset('js/page.min.js') }}"></script>
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 
   </body>
 </html>
