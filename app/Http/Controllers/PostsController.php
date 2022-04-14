@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\VerifyCategoriesCount;
 use App\Http\Requests\Posts\CreatePostRequest;
 use App\Http\Requests\Posts\UpdatePostRequest;
 use App\Models\Category;
@@ -16,6 +17,10 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('verifiedCategoryCount')->only(['create', 'store']);
+    }
     public function index()
     {
         //
