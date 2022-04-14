@@ -29,3 +29,4 @@ Route::resource('categories', 'App\Http\Controllers\CategoriesController');
 Route::resource('posts', 'App\Http\Controllers\PostsController');
 
 Route::get('trashed-posts', 'App\Http\Controllers\PostsController@trashed')->name('trashed-post.index');
+Route::put('restore-post/{post}', 'App\Http\Controllers\PostsController@restore')->name('restore-post');
