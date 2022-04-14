@@ -14,6 +14,7 @@
             <table class="table">
                 <thead>
                     <th>Name</th>
+                    <th>Post Count</th>
                     <th></th>
                 </thead>
                 <tbody>
@@ -22,6 +23,7 @@
                             <td>
                                 {{$category->name}}
                             </td>
+                            <td>{{$category->posts->count()}}</td>
                             <td>
                                 <a href="{{route('categories.edit', $category->id)}}" class="btn btn-info float-end">Edit</a>
                                 <button type="button" class="btn btn-danger float-end mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
