@@ -31,3 +31,8 @@ Route::middleware(['auth'])->group(function(){
     Route::get('trashed-posts', 'App\Http\Controllers\PostsController@trashed')->name('trashed-post.index');
     Route::put('restore-post/{post}', 'App\Http\Controllers\PostsController@restore')->name('restore-post');
 });
+
+Route::middleware(['auth', 'admin'])->group(function(){
+    Route::get('users','App\Http\Controllers\UsersController@index')->name('users.index');
+
+});
